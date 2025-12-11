@@ -4,9 +4,8 @@
 1. Run npm install to install dependencies.
 2. Create a .env file (copy from .env.example) and set:
 - VITE_API_URL=http://localhost:4000
-3. npm run dev
-# or for CRA
-npm start
+3. npm run dev (or) npm start (for CRA)
+
 
 ## API Usage(examples)
 // login
