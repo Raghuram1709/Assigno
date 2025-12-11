@@ -1,0 +1,205 @@
+/* ProjectReg.css */
+
+.project-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  background: #f7faff;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.project-form {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 64, 128, 0.1);
+  max-width: 900px;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  color: #003b91;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.input-group label {
+  font-weight: 500;
+  color: #002d6e;
+  margin-bottom: 0.3rem;
+}
+
+.input-group input,
+.input-group textarea {
+  padding: 0.7rem 1rem;
+  border: 1px solid #d8e3f0;
+  border-radius: 8px;
+  background: #fdfefe;
+  font-size: 0.95rem;
+  transition: 0.2s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #0077ff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 119, 255, 0.2);
+}
+
+.member-section {
+  margin-top: 2rem;
+}
+
+.member-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+}
+
+.member-header h3 {
+  color: #003b91;
+  font-weight: 600;
+}
+
+.add-btn {
+  background: #0077ff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.add-btn:hover {
+  transform: scale(1.01);
+}
+
+.member-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fafcff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 64, 128, 0.08);
+}
+
+.member-table th,
+.member-table td {
+  text-align: left;
+  padding: 0.8rem 1rem;
+}
+
+.member-table th {
+  background: #e6f0ff;
+  color: #002d6e;
+  font-weight: 600;
+}
+
+.member-table td input {
+  width: 100%;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid #d8e3f0;
+  border-radius: 6px;
+  background: #ffffff;
+  font-size: 0.9rem;
+}
+
+.member-table td input:focus {
+  border-color: #0077ff;
+  outline: none;
+}
+
+.delete-btn {
+  background: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.delete-btn:hover {
+  transform: scale(1.01);
+}
+
+.form-actions {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.submit-btn {
+  background: #003b91;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: scale(1.01);
+  
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-form {
+    padding: 1.5rem;
+  }
+
+  .member-table thead {
+    display: none;
+  }
+
+  .member-table tr {
+    display: block;
+    margin-bottom: 1rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 64, 128, 0.05);
+  }
+
+  .member-table td {
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem;
+    border-bottom: 1px solid #f0f4fa;
+  }
+
+  .member-table td:last-child {
+    border-bottom: none;
+  }
+
+  .member-table td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #003b91;
+  }
+
+  .add-btn, .delete-btn{
+    width: 150px;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}

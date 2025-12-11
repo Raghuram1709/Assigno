@@ -1,0 +1,32 @@
+# Ignore global system files
+.DS_Store
+Thumbs.db
+
+# Ignore all env files from all modules
+**/.env
+**/.env.local
+**/.env.*.local
+
+# Ignore node_modules from all subfolders
+**/node_modules/
+
+# Ignore build output in any project
+**/dist/
+**/build/
+**/.next/
+**/out/
+**/dist-ssr/
+
+# Ignore logs across projects
+**/*.log
+logs/
+
+# Ignore editor settings repo-wide
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Optional: ignore lockfiles if using multiple package managers
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
