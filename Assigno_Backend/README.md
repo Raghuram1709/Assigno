@@ -3,9 +3,9 @@
 ## Setup
 1. Run `npm install` to install dependencies.
 2. Create a .env file (copy from .env.example) and fill in values:
-- PORT=4000
-- MONGODB_URI=your_mongo_url
-- JWT_SECRET=your_jwt_secret
+  - PORT=4000
+  - MONGODB_URI=your_mongo_url
+  - JWT_SECRET=your_jwt_secret
 3. Run `npm run dev` for development.
 
 ## API Endpoints
